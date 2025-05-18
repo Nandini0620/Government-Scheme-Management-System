@@ -1,0 +1,114 @@
+### Setting Up the Government Scheme Management System in VS Code
+
+Here's how to set up and run the project using Visual Studio Code:
+
+## 1. Create a New Next.js Project
+
+Open your terminal and run:
+
+```shellscript
+npx create-next-app gov-scheme-system
+cd gov-scheme-system
+```
+
+## 2. Open the Project in VS Code
+
+```shellscript
+code .
+```
+
+This will open the project in VS Code. Alternatively, you can open VS Code first, then use File > Open Folder to navigate to your project directory.
+
+## 3. Install Required Dependencies
+
+Open the integrated terminal in VS Code (Terminal > New Terminal) and run:
+
+```shellscript
+npm install lucide-react
+npx shadcn@latest init
+```
+
+When prompted during shadcn/ui setup, select:
+
+- TypeScript: Yes
+- Style: Default (or your preference)
+- Base color: Default (or your preference)
+- Global CSS: Yes
+- CSS variables: Yes
+- React Server Components: Yes
+- Components location: @/components
+- Utilities location: @/lib/utils
+- Include example components: No
+
+
+## 4. Install shadcn/ui Components
+
+```shellscript
+npx shadcn@latest add button card input label checkbox badge progress tabs table radio-group select separator
+```
+
+## 5. Create Project Files
+
+In VS Code's Explorer panel (left sidebar), create the following folder structure:
+
+```plaintext
+app/
+├── dashboard/
+│   ├── citizen/
+│   └── official/
+├── login/
+├── register/
+└── schemes/
+    └── [id]/
+```
+
+## 6. Copy the Code Files
+
+For each file in the code block I provided earlier:
+
+1. Create a new file at the specified path in VS Code
+2. Copy the code content into the file
+3. Save the file (Ctrl+S or Cmd+S)
+
+
+For example:
+
+- Create `app/page.tsx` and paste the home page code
+- Create `app/register/page.tsx` and paste the registration page code
+- And so on for all the files
+
+
+## 7. Run the Development Server
+
+In the VS Code terminal, run:
+
+```shellscript
+npm run dev
+```
+
+## 8. View the Application
+
+The terminal will show a URL (typically [http://localhost:3000](http://localhost:3000)). You can:
+
+- Ctrl+click (or Cmd+click) the URL in the terminal to open it in your browser
+- Or manually open your browser and navigate to [http://localhost:3000](http://localhost:3000)
+
+
+## VS Code Tips for This Project
+
+1. **Install Extensions** for a better development experience:
+
+1. ESLint
+2. Prettier
+3. Tailwind CSS IntelliSense
+4. ES7+ React/Redux/React-Native snippets
+
+
+
+2. **Use the integrated terminal** to run commands without leaving VS Code
+3. **Split editors** to view multiple files side by side (drag a tab to the side of the editor)
+4. **Use the Problems panel** (View > Problems) to see any errors or warnings
+5. **Use the built-in Git integration** to track changes (Source Control icon in the sidebar)
+
+
+The project should now be running and ready for you to explore and modify in VS Code!
